@@ -1,0 +1,135 @@
+# LearnCraft LMS (Backend)
+
+LearnCraft is a multi-tenant Learning Management System (LMS) backend built using NestJS, MongoDB, and JWT authentication.
+
+The goal of this project is to simulate a real-world scalable backend system where instructors can create courses and students can enroll, learn, and track their progress.
+
+---
+
+## 🚀 Project Goals
+
+This project is built to demonstrate:
+
+- Scalable backend architecture using NestJS
+- Authentication & Authorization (JWT-based)
+- Role-based access control (Student, Instructor, Admin)
+- Real-world database design using MongoDB
+- Clean modular architecture
+- System design thinking for production-level applications
+
+---
+
+## 🧠 Key Features
+
+### 1. Authentication System
+- User signup and login
+- JWT-based authentication
+- Secure password hashing using bcrypt
+- Role-based access (student, instructor, admin)
+
+---
+
+### 2. Course Management
+- Instructors can create courses
+- Courses contain sections and lectures
+- Draft and publish workflow for courses
+
+---
+
+### 3. Video Lecture System
+- Video URLs stored in database
+- Videos uploaded via cloud storage (e.g. Cloudinary)
+
+---
+
+### 4. Enrollment System
+- Students can enroll in courses
+- Access control based on enrollment
+
+---
+
+### 5. Reviews & Ratings
+- Students can review courses
+- Prevent duplicate reviews
+- Maintain average rating and total reviews
+
+---
+
+### 6. User Roles & Approval System
+- Users start as students by default
+- Instructor role requires admin approval (via verification process)
+
+---
+
+### 7. Progress Tracking (Upcoming)
+- Track lecture completion
+- Resume learning from last watched position
+
+---
+
+## 🏗️ Tech Stack
+
+- Backend: NestJS (Node.js framework)
+- Database: MongoDB (Mongoose ORM)
+- Authentication: JWT
+- Password Security: bcrypt
+- Validation: class-validator
+- Configuration: @nestjs/config
+- Storage (planned): Cloudinary
+
+---
+
+## 🧩 Architecture Overview
+
+The project follows a modular architecture:
+
+- **Controllers** → Handle HTTP requests
+- **Services** → Business logic layer
+- **Modules** → Feature-based separation (Auth, Users, Courses)
+- **DTOs** → Input validation layer
+- **Guards** → Authentication & role protection
+
+---
+
+## 📦 Core Modules
+
+- Auth Module → Login, Signup, JWT handling
+- User Module → User management and roles
+- Course Module → Course creation and management
+- Enrollment Module → Student course access
+- Review Module → Ratings and feedback system
+
+---
+
+## 🔐 Security Design
+
+- Passwords are hashed using bcrypt
+- JWT used for stateless authentication
+- Role-based access control (RBAC)
+- Refresh token strategy (planned/optional enhancement)
+
+---
+
+## 🎯 Project Purpose
+
+This project is NOT just a CRUD application.
+
+It is designed to demonstrate:
+- Real backend engineering skills
+- System design understanding
+- Scalable architecture thinking
+- Production-level API design
+
+---
+
+## 📌 Status
+
+Currently in active development.
+
+Phase 1: Authentication & Project Setup (In Progress)
+
+---
+
+## 👨‍💻 Author
+
+Built as a learning project to transition into a full-stack backend engineer role with focus on scalable system design.
