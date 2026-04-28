@@ -11,7 +11,7 @@ export class UsersService {
     return this.userModel.findOne({ email });
   }
 
-  async create(data: any) {
+  async create(data: Partial<User>) {
     return this.userModel.create(data);
   }
 }
